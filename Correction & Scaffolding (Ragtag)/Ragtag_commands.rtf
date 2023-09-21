@@ -1,0 +1,30 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww26840\viewh14460\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs48 \cf2 \expnd0\expndtw0\kerning0
+The following commands are to be executed for correcting the de novo assembly R6 that is associated with the Reference Strain BY4741_synV. All the de novo assemblies have to be corrected and scaffolded using similar code with changed filenames. \
+\
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 Correction using Ragtag- \
+\pard\pardeftab720\partightenfactor0
+\cf2 ragtag.py correct BY4741_synV.fa denovo/flye_R6.fasta -f 500 -T ont -o denovo/RT_Correct/ct_R6/ragtag.correct.fasta
+\f1\fs32 \
+
+\f0\fs48 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs32 \cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f0\fs48 \cf2 \'a0Scaffolding using Ragtag- 
+\f1\fs32 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs48 \cf2 ragtag.py scaffold BY4741_synV.fa denovo/RT_Correct/ct_R6/ragtag.correct.fasta -f 500 -T ont -o denovo/RT_Scaff/sf_R6/ragtag.scaffold.fasta
+\f1\fs32 \
+}
